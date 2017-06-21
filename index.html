@@ -37,30 +37,31 @@
 </nav> <!-- aca termina el navbar -->
 
 <!-- caja amarilla para registrarse -->
-			<div class="container caja-principal">
-						<div class="row">
-							<div class="col-md-offset-7 col-xs-offset-3 col-md-6 col-xs-6">
-								<div class="contenido-bienv">
-									<h1 class="titulo-principal hidden-xs">Disfruta del viaje eres dueño de tu tiempo</h1>
-									<h1 class="visible-xs">Comienza a viajar con lab < car</h1>
+			<div class="container-fluid caja-principal">
+				<div class="row">
+					<div class="col-md-offset-7 col-md-6 col-xs-12 col-xs-offset-1">
+						<div class="contenido-bienv">
+							<h1 class="titulo-principal hidden-xs">Disfruta del viaje eres dueño de tu tiempo</h1>
+							<h1 class="visible-xs">Comienza a viajar con lab < car</h1>
 
-									<p class="parrafo-primera-seccion"><strong>viaja con lab < ar</strong></p>
-									<p>Regístrate</p>
+							<p class="parrafo-primera-seccion hidden-xs"><strong>viaja con lab < ar</strong></p>
+							<p class="hidden-xs">Regístrate</p>
 
-									<div class="row">
-										<div class="col-md-4">
-											<hr class="linea">
-										</div>
-										<div class="col-md-4">	
-											<p>o bien</p>
-										</div>
+								<div class="row hidden-xs">
+									<div class="col-md-4">
+									<hr class="linea">
+								</div>
+									<div class="col-md-4">	
+										<p>o bien</p>
+									</div>
 										<div col-md-4>
 											<hr class="linea"><br>
 										</div>
 										
 									</div>
 
-									<button type="button" class="btn btn-default btn-lg">Conviértete en un conductor</button>
+									<button type="button" class="btn btn-default btn-lg hidden-xs">Conviértete en un conductor</button>
+									<button type="button" class="btn btn-default btn-lg visible-xs"><strong>Descarga el app</strong></button>
 								</div>
 							</div>
 						</div>
@@ -72,27 +73,29 @@
 	<div class="container borde">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="assets/img/celular.png">
+				<h3 class="visible-xs">La nueva app</h3>
+				<img src="assets/img/celular.png" class="img-responsive">
 			</div>
 				<div class="col-md-6">
-					<h3 class="titulo-segunda-seccion">Descarga la nueva app</h3>
-					<p class="parrafo-primera-seccion">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.
+					<h3 class="titulo-segunda-seccion hidden-xs">Descarga la nueva app</h3>
+					<p class="parrafo-primera-seccion hidden-xs">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.
 					Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir</p>
 				 </div>	
 			</div>
 		</div>
+		<p class="visible-xs"><strong>Llega a tu destino aún más rápido</strong></p>
 </section><!-- termino segunda sección -->
 
 <!-- tercera sección -->
 <section class="tercera-seccion">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-offset-7 col-md-6">
-				<div class="contenido-segunda-caja">
-				  <div class="contenido">
-					<h1 class="titulo-segunda-caja">Conduce cuando quieras</h1>
-					<p class="parrafo-segunda-caja">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-					<button type="button" class="btn btn-warning btn-lg">Conviértete en un conductor</button>
+			<div class="col-md-offset-7 col-md-6 col-xs-12">
+				<div class="contenido-segunda-caja col-xs-12">
+				  <div class="contenido col-xs-12">
+						<h1 class="titulo-segunda-caja">Conduce cuando quieras</h1>
+						<p class="parrafo-segunda-caja">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+						<button type="button" class="btn btn-warning btn-lg">Conviértete en un conductor</button>
 				   </div>
 				</div>
 			</div>
@@ -100,20 +103,20 @@
 	</div>		
 </section>
 <!-- termino tercera sección -->
-
+	
 <!-- cuarta sección -->
 <section class="cuarta-seccion">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 cuarta-seccion-div">
+			<div class="col-md-6 col-xs-12 cuarta-seccion-div">
 			    <h3 class="titulo-cuarta-seccion">Tarifas</h3>
 			    <p class="parrafo-cuarta-seccion">Consulta las tarifas LabCar aquí</p>
 
 			    <div class="row">
-			     <div class="col-md-1">
+			     <div class="col-md-1 col-xs-2">
 			     	<img src="assets/img/circulo.png">
 			     </div>
-			    <div class="col-md-6">
+			    <div class="col-md-6 col-xs-10">
 				 <div class="form-group">
   					<input type="text" class="form-control" id="start" placeholder="Ingrese su punto de partida">
 				 </div>
@@ -121,10 +124,10 @@
 			  </div>
 
 				 <div class="row">
-				 <div class="col-md-1">
+				 <div class="col-md-1 col-xs-2">
 				 	<img src="assets/img/flecha.png">
 				 </div>
-				 <div class="col-md-6">
+				 <div class="col-md-6 col-xs-10">
 					<div class="form-group">
   						<input type="text" class="form-control" id="end" placeholder="Ingrese su destino">
   						<br><button type="button" class="btn btn-default btn-lg center-block" id="ruta">¡Trazar Ruta!</button>
@@ -133,7 +136,7 @@
 					</div>	  	    		
 			</div>	
 
-				<div class="col-md-6 mapa" id="map">
+				<div class="col-md-6 mapa hidden-xs" id="map">
 					<!-- acá irá el mapa -->
 				</div>
 			</div>
@@ -151,14 +154,16 @@
 		  <div class="row">
 		  	<img src="assets/img/logo-blanco.png">
 		  	<hr>
-		  		<div class="col-md-3">
+		  		<div class="col-md-3 hidden-xs">
+		  		  <div class="redes-soc">
 		  			<i class="fa fa-facebook-official" aria-hidden="true"></i>
                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                     <i class="fa fa-apple" aria-hidden="true"></i>	
                     <i class="fa fa-play" aria-hidden="true"></i>
+                   </div> 
 		  		</div>
-		  		<div class="col-md-3">
+		  		<div class="col-md-3 col-xs-6">
 		  		<ul>
 		  			<li><a href=""></a>Viaja</li><br>
 		  			<li><a href=""></a>Conduce</li><br>
@@ -170,7 +175,20 @@
 		  			<li><a href=""></a>Seguridad</li>
 		  		</ul>	
 		  		</div>
-		  		<div class="col-md-3">
+				<div class="col-md-6 visible-xs">
+		  		  <div class="redes-soc">
+		  			<i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-apple" aria-hidden="true"></i>	
+                    <i class="fa fa-play" aria-hidden="true"></i>
+		  			<a href=""><img src="assets/img/app-store.png" class=" img-responsive img-empresa"></a>
+		  			<a href=""><img src="assets/img/google-play.png" class="img-responsive img-empresa"></a>
+		  		</div>
+
+		  		</div>
+
+		  		<div class="col-md-3 hidden-xs">
 		  		<ul>
 		  			<li><a href=""></a>Oportunidades</li><br>
 		  			<li><a href=""></a>Nuestra historia</li><br>
@@ -183,7 +201,7 @@
 		  		</ul>	
 		  		</div>
 
-		  		<div class="col-md-3">
+		  		<div class="col-md-3 hidden-xs">
 		  			<a href=""><img src="assets/img/app-store.png" class=" img-responsive img-empresa"></a>
 
 		  			<a href=""><img src="assets/img/google-play.png" class="img-responsive img-empresa"></a>

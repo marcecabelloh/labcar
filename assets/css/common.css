@@ -1,3 +1,9 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
 body{
 	padding: 0;
 	margin: 0 auto;
@@ -42,6 +48,7 @@ body{
 /*crear borde que rodee imagen y texto*/
 .borde{
 	border: 1px solid white;
+	padding: 30px;
 }
 
 
@@ -100,4 +107,10 @@ ul li{
 
 .img-empresa{
 	width: 50%;
+	margin-top: 100px;
+}
+
+.redes-soc{
+	margin-top: 300px;
+	color: white;
 }
