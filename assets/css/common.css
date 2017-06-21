@@ -1,8 +1,8 @@
 *{
 	padding: 0;
 	margin: 0 auto;
-	overflow-x: hidden;
 }
+
 
 body{
 	padding: 0;
@@ -26,12 +26,17 @@ body{
 	
 }
 
+
 .contenido-bienv{
 	background-color: #f7b617;
 	color: white;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding: 100px;
+}
+
+.titulo-principal{
+	font-size: 35px;
 }
 
 .linea{
@@ -68,6 +73,11 @@ body{
 	padding: 100px;
 }
 
+.titulo-segunda-caja{
+	font-size: 35px;
+}
+
+
 /*cuarta sección*/
 
 .cuarta-seccion{
@@ -79,6 +89,12 @@ body{
 .form-control{
 	background-color: #f7b617;
 	border-color: white;
+}
+
+.mapa{
+	height: 200px;
+	width: 300px;
+	border: 1px solid white;
 }
 
 /*cambio color placeholder con bootstrap*/

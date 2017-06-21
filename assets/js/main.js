@@ -73,3 +73,5 @@ function initMap(){
 	autocompleteDestino.bindTo('bounds', map);
 
 }
+
+initMap();
