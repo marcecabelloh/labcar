@@ -17,18 +17,45 @@ body{
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
-	width: 100%;
+	
 }
 
-.caja-principal{
+.contenido-bienv{
 	background-color: #f7b617;
 	color: white;
-	width: 30%;
+	margin-bottom: 50px;
 }
 
+/*inicio segunda sección*/
 .segunda-seccion{
 	background-color: #f7b617;
 	color: white;
 	padding: 100px;
 }
 
+/*crear borde que rodee imagen y texto*/
+.borde{
+	border: 1px solid white;
+}
+
+
+/*tercera sección*/
+.tercera-seccion{
+	background: url('../img/conduce.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.contenido-segunda-caja{
+	background-color: black;
+	opacity:0.5;
+
+}
+
+/*cuarta sección*/
+
+.cuarta-seccion{
+	background-color: #f7b617;
+}
