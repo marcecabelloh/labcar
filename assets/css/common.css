@@ -1,0 +1,34 @@
+body{
+	padding: 0;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+/*sección bienvenida y navbar*/
+
+.navbar-default{
+	padding: 30px;
+	background-color: white;
+}
+
+.bienvenida{
+	background: url('../img/taxi.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	width: 100%;
+}
+
+.caja-principal{
+	background-color: #f7b617;
+	color: white;
+	width: 30%;
+}
+
+.segunda-seccion{
+	background-color: #f7b617;
+	color: white;
+	padding: 100px;
+}
+
