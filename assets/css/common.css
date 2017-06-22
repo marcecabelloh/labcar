@@ -70,11 +70,15 @@ body{
 .contenido-segunda-caja{
 	background-color: rgba(11, 3, 16,0.4);
 	max-width: 120%;
-	padding:100px;
+	height: 400px;
 }
 
 .titulo-segunda-caja{
 	font-size: 35px;
+}
+
+.contenido{
+	margin-top: 130px;
 }
 
 
@@ -83,19 +87,30 @@ body{
 .cuarta-seccion{
 	background-color: #f7b617;
 	color: white;
-	padding: 100px;
+	height: 600px;
+}
 
+.cuarta-seccion-div{
+	margin-top: 100px;
 }
 
 .form-control{
 	background-color: #f7b617;
 	border-color: white;
+	color: white;
 }
 
 .mapa{
-	border: 1px solid white;
+	margin-top: 100px;
 	height: 400px;
 	width: 500px
+}
+
+.caja-mapa{/*intento ponerle borde al mapa pero no resulta, aparece borde y no caja
+	por eso borré el div que contenía esta clase, y la dejo acá para justificar que lo intenté*/
+	border: 1px solid white;
+	height: 450px;
+	width: 450px
 }
 
 
@@ -137,3 +152,5 @@ ul li{
 .redes-soc-dos{
 	color: white;
 }
+
+/*saqué todos los padding y los reemplacé por width y height y responsive se maneja super bien*/

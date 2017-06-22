@@ -15,7 +15,7 @@ function initMap(){
       navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
     }
   }
-  document.getElementById("ruta").addEventListener("click", buscar);//enlazo el boton ruta con su id para que al hacer click el boton ejecute la ruta
+  addEventListener("load", buscar);//enlazo el boton ruta con su id para que al hacer click el boton ejecute la ruta
   var latitud,longitud;
 
   //se obtiene latitud o longitud
@@ -40,7 +40,7 @@ function initMap(){
 
   //Librería gmps.
   //Librería gmps necesaria para que los input reconozcan lugares al momento de tipear
-  var inputOrigen =(document.getElementById('start'));    
+  var inputOrigen =(document.getElementById("start"));    
   var autocompleteOrigen = new google.maps.places.Autocomplete(inputOrigen);
   autocompleteOrigen.bindTo('bounds', map);
 
@@ -48,12 +48,12 @@ function initMap(){
   var autocompleteDestino = new google.maps.places.Autocomplete(inputDestino);
   autocompleteDestino.bindTo('bounds', map);
 
+
   //expresa coordenadas
   //var que ubican el espacio y el lugar en donde estamos y a donde nos dirigimos
   var directionsService = new google.maps.DirectionsService;
-  
   var directionsDisplay = new google.maps.DirectionsRenderer;
-  
+  directionsDisplay = new google.maps.DirectionsRenderer({suppressMarkers: true}); 
   directionsDisplay.setMap(map);
 
   //al igual que var directionService y Display fue sacada de la documentacion
@@ -63,15 +63,15 @@ function initMap(){
         calculateAndDisplayRoute(directionsService, directionsDisplay);
       };
  
-  document.getElementById('start').addEventListener('change', onChangeHandler);
-  document.getElementById('end').addEventListener('change', onChangeHandler);
+  document.getElementById("start").addEventListener('change', onChangeHandler);
+  document.getElementById("end").addEventListener('change', onChangeHandler);
 
 
 
   function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         directionsService.route({
-            origin: document.getElementById('start').value,
-            destination: document.getElementById('end').value,
+            origin: document.getElementById("start").value,
+            destination: document.getElementById("end").value,
             travelMode: 'DRIVING'
         },  
         function(response, status) {
@@ -84,4 +84,4 @@ function initMap(){
     }
 }
 
-initMap();
+//MAPA FUNCIONA. HAY QUE DARLE DOS CLICK Y NO HAY PROBLEMA- A VECES SE QUEDA PEGADO, PERO FUNCIONA
