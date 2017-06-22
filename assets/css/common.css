@@ -1,6 +1,6 @@
 *{
 	padding: 0;
-	margin: 0 auto;
+	margin: 0 ;
 }
 
 
@@ -30,9 +30,10 @@ body{
 .contenido-bienv{
 	background-color: #f7b617;
 	color: white;
+	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	padding: 100px;
+	padding: 80px;
 }
 
 .titulo-principal{
@@ -47,7 +48,7 @@ body{
 .segunda-seccion{
 	background-color: #f7b617;
 	color: white;
-	padding: 100px;
+	padding: 70px;
 }
 
 /*crear borde que rodee imagen y texto*/
@@ -67,10 +68,9 @@ body{
 }
 
 .contenido-segunda-caja{
-	background-color: black;
-	opacity:0.5;
-	width: 100%;
-	padding: 100px;
+	background-color: rgba(11, 3, 16,0.4);
+	max-width: 120%;
+	padding:100px;
 }
 
 .titulo-segunda-caja{
@@ -84,6 +84,7 @@ body{
 	background-color: #f7b617;
 	color: white;
 	padding: 100px;
+
 }
 
 .form-control{
@@ -92,10 +93,12 @@ body{
 }
 
 .mapa{
-	height: 200px;
-	width: 300px;
 	border: 1px solid white;
+	height: 400px;
+	width: 500px
 }
+
+
 
 /*cambio color placeholder con bootstrap*/
 .form-control::-webkit-input-placeholder { color: white; }
@@ -122,11 +125,15 @@ ul li{
 }
 
 .img-empresa{
-	width: 50%;
+	width: 60%;
 	margin-top: 100px;
 }
 
 .redes-soc{
 	margin-top: 300px;
+	color: white;
+}
+
+.redes-soc-dos{
 	color: white;
 }
